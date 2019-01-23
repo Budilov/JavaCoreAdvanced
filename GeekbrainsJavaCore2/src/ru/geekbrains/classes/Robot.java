@@ -53,5 +53,13 @@ public class Robot implements Participant {
         }
     }
 
+    public String getName(){
+        return name;
+    }
+
     // TODO переопределить toString() по аналогии с Animal
+    public String toString() {
+        return name + " : " + (isOnDistance() ? "на дистанции" : "сошел с дистанции");
+    }
+    // переопределил
 }
